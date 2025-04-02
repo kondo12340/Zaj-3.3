@@ -1,26 +1,25 @@
 
+import java.util.Scanner;
 
 public class Main {
   public static void main(String[] args) {
+     Scanner losowe = new Scanner(System.in);
+     System.out.print("Wpisz co chcesz (aby zakończyć naciśnij 'q'): ");
 
-     Scanner scanner = new Scanner(System.in);
-            char znak;
-
-            while (true) {
-                // Pobierz znak od użytkownika
-                System.out.print("Wpisz znak (aby zakończyć naciśnij 'q'): ");
-                znak = scanner.next().charAt(0);  // Wczytuje pojedynczy znak
-
-                // Sprawdź, czy użytkownik wpisał 'q'
-                if (znak == 'q') {
-                    System.out.println("Zakończono program.");
-                    break;  // Przerywa pętlę
-                }
-
-                // Wypisz wpisany znak
-                System.out.println("Wpisany znak: " + znak);
-            }
-
-            scanner.close();  // Zamknięcie zasobu scanner
-        }
-    }
+     while (true) {
+      String input = losowe.nextLine();  
+       if (input.equals("q"))  
+         
+      
+        break;  
+       {
+         System.out.println("Wpisane losowe: " + input );
+       }
+       
+       
+    
+     }
+      System.out.println("Miłego dnia mordo");
+    losowe.close();  
+  }
+}
